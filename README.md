@@ -3,5 +3,5 @@ Design Pattern: MVVM
 
 Used:
 
-Kingfisher 
+Kingfisher,
 Moya/Alamofire
