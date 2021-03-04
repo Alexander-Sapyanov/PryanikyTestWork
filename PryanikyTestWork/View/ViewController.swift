@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
 
     // MARK: - Functions
-    func setUpTableView() {
+    private func setUpTableView() {
         tableView.register(HzCell.self, forCellReuseIdentifier: HzCell.identifier)
         tableView.register(SelectorCell.self, forCellReuseIdentifier: SelectorCell.identifier)
         tableView.register(PictureCell.self, forCellReuseIdentifier: PictureCell.identifier)
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         tableView.dataSource = self
     }
     
-    func fetching() {
+    private func fetching() {
         viewModel?.fetchData {
             self.tableView.reloadData()
         }

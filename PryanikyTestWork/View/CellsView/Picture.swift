@@ -35,11 +35,11 @@ class PictureCell: UITableViewCell, CellProtocol {
     }
     
     private func cellLayout() {
-    
         addSubview(pictureImageView)
-        
+
         NSLayoutConstraint.activate([
             pictureImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 10),
+            pictureImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
             pictureImageView.widthAnchor.constraint(equalToConstant: 130),
             pictureImageView.heightAnchor.constraint(equalToConstant: 130)
         ])

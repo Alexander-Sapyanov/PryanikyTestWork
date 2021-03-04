@@ -36,7 +36,7 @@ class SelectorCell: UITableViewCell, CellProtocol {
         selectorPickerView.selectRow(selectedId - 1, inComponent: 0, animated: true)
     }
     
-    func cellLayout() {
+    private func cellLayout() {
         selectorPickerView.translatesAutoresizingMaskIntoConstraints = false
         self.contentView.addSubview(selectorPickerView)
         NSLayoutConstraint.activate([
